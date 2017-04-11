@@ -8,13 +8,13 @@
 =begin
 users = User.create([
                         {
-                            fist_name: 'Juan',
+                            first_name: 'Juan',
                             middle_name: 'Pinto',
                             last_name: 'Armen',
                             email: 'abc@jpinto.com'
                         },
                         {
-                            fist_name: 'Pablo',
+                            first_name: 'Pablo',
                             middle_name: 'Escala',
                             last_name: 'Guitierrez',
                             email: 'abc@pscalada.com'
