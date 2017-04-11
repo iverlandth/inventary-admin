@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-=begin
+
 users = User.create([
                         {
                             first_name: 'Juan',
@@ -22,7 +22,7 @@ users = User.create([
 
                     ])
 
-=end
+
 equipements = Equipment.create(code: '123',
                                class_equipment: 'Desktop',
                                type_equipment: 'Workstation',
