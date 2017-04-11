@@ -1,0 +1,6 @@
+rails new create inventory -d postgresql
+
+
+rails g scaffold users fist_name middle_name last_name email
+
+rails g scaffold equipments code class_equipment type_equipment manufacturer platform model_number os total_memory_ram:integer processor:text total_storage:integer purchase_date:datetime warranty_expires:date details:text user:references

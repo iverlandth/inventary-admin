@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  class_equipment: MyString
+  type_equipment: MyString
+  manufacturer: MyString
+  platform: MyString
+  model_number: MyString
+  os: MyString
+  total_memory_ram: 1
+  processor: MyText
+  total_storage: 1
+  purchase_date: 2017-04-11 12:16:23
+  warranty_expires: 2017-04-11
+  details: MyText
+  user: one
+
+two:
+  code: MyString
+  class_equipment: MyString
+  type_equipment: MyString
+  manufacturer: MyString
+  platform: MyString
+  model_number: MyString
+  os: MyString
+  total_memory_ram: 1
+  processor: MyText
+  total_storage: 1
+  purchase_date: 2017-04-11 12:16:23
+  warranty_expires: 2017-04-11
+  details: MyText
+  user: two

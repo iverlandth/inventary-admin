@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Equipment</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Class equipment</th>
+      <th>Type equipment</th>
+      <th>Manufacturer</th>
+      <th>Platform</th>
+      <th>Model number</th>
+      <th>Os</th>
+      <th>Total memory ram</th>
+      <th>Processor</th>
+      <th>Total storage</th>
+      <th>Purchase date</th>
+      <th>Warranty expires</th>
+      <th>Details</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @equipment.each do |equipment| %>
+      <tr>
+        <td><%= equipment.code %></td>
+        <td><%= equipment.class_equipment %></td>
+        <td><%= equipment.type_equipment %></td>
+        <td><%= equipment.manufacturer %></td>
+        <td><%= equipment.platform %></td>
+        <td><%= equipment.model_number %></td>
+        <td><%= equipment.os %></td>
+        <td><%= equipment.total_memory_ram %></td>
+        <td><%= equipment.processor %></td>
+        <td><%= equipment.total_storage %></td>
+        <td><%= equipment.purchase_date %></td>
+        <td><%= equipment.warranty_expires %></td>
+        <td><%= equipment.details %></td>
+        <td><%= equipment.user %></td>
+        <td><%= link_to 'Show', equipment %></td>
+        <td><%= link_to 'Edit', edit_equipment_path(equipment) %></td>
+        <td><%= link_to 'Destroy', equipment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Equipment', new_equipment_path %>

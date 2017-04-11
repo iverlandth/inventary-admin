@@ -5,3 +5,36 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+=begin
+users = User.create([
+                        {
+                            fist_name: 'Juan',
+                            middle_name: 'Pinto',
+                            last_name: 'Armen',
+                            email: 'abc@jpinto.com'
+                        },
+                        {
+                            fist_name: 'Pablo',
+                            middle_name: 'Escala',
+                            last_name: 'Guitierrez',
+                            email: 'abc@pscalada.com'
+                        }
+
+                    ])
+
+=end
+equipements = Equipment.create(code: '123',
+                               class_equipment: 'Desktop',
+                               type_equipment: 'Workstation',
+                               manufacturer: 'Intel',
+                               platform: '64-bit',
+                               model_number: 'OPTIPLEX 745',
+                               os: 'Windows 7',
+                               total_memory_ram: 8000,
+                               processor: 'Core i7 ',
+                               total_storage: 2500000,
+                               details: 'Ip adress 192.168.5.12',
+                               user_id: 1,
+
+)
+
