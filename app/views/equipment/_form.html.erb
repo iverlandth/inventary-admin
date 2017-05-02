@@ -1,87 +1,24 @@
-<%= form_for(equipment) do |f| %>
-  <% if equipment.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(equipment.errors.count, "error") %> prohibited this equipment from being saved:</h2>
+<%= simple_form_for(@equipment) do |f| %>
+  <%= f.error_notification %>
 
-      <ul>
-      <% equipment.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :code %>
-    <%= f.text_field :code %>
+  <div class="form-inputs">
+    <%= f.input :code %>
+    <%= f.input :class_equipment %>
+    <%= f.input :type_equipment %>
+    <%= f.input :manufacturer %>
+    <%= f.input :platform %>
+    <%= f.input :model_number %>
+    <%= f.input :os %>
+    <%= f.input :total_memory_ram %>
+    <%= f.input :processor %>
+    <%= f.input :total_storage %>
+    <%= f.input :purchase_date %>
+    <%= f.input :warranty_expires %>
+    <%= f.input :details %>
+    <%= f.association :user %>
   </div>
 
-  <div class="field">
-    <%= f.label :class_equipment %>
-    <%= f.text_field :class_equipment %>
-  </div>
-
-  <div class="field">
-    <%= f.label :type_equipment %>
-    <%= f.text_field :type_equipment %>
-  </div>
-
-  <div class="field">
-    <%= f.label :manufacturer %>
-    <%= f.text_field :manufacturer %>
-  </div>
-
-  <div class="field">
-    <%= f.label :platform %>
-    <%= f.text_field :platform %>
-  </div>
-
-  <div class="field">
-    <%= f.label :model_number %>
-    <%= f.text_field :model_number %>
-  </div>
-
-  <div class="field">
-    <%= f.label :os %>
-    <%= f.text_field :os %>
-  </div>
-
-  <div class="field">
-    <%= f.label :total_memory_ram %>
-    <%= f.number_field :total_memory_ram %>
-  </div>
-
-  <div class="field">
-    <%= f.label :processor %>
-    <%= f.text_area :processor %>
-  </div>
-
-  <div class="field">
-    <%= f.label :total_storage %>
-    <%= f.number_field :total_storage %>
-  </div>
-
-  <div class="field">
-    <%= f.label :purchase_date %>
-    <%= f.datetime_select :purchase_date %>
-  </div>
-
-  <div class="field">
-    <%= f.label :warranty_expires %>
-    <%= f.date_select :warranty_expires %>
-  </div>
-
-  <div class="field">
-    <%= f.label :details %>
-    <%= f.text_area :details %>
-  </div>
-
-  <div class="field">
-    <%= f.label :user_id %>
-    <%= f.text_field :user_id %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-actions">
+    <%= f.button :submit %>
   </div>
 <% end %>

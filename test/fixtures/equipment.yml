@@ -11,8 +11,8 @@ one:
   total_memory_ram: 1
   processor: MyText
   total_storage: 1
-  purchase_date: 2017-04-11 12:16:23
-  warranty_expires: 2017-04-11
+  purchase_date: 2017-05-02 11:28:07
+  warranty_expires: 2017-05-02
   details: MyText
   user: one
 
@@ -27,7 +27,7 @@ two:
   total_memory_ram: 1
   processor: MyText
   total_storage: 1
-  purchase_date: 2017-04-11 12:16:23
-  warranty_expires: 2017-04-11
+  purchase_date: 2017-05-02 11:28:07
+  warranty_expires: 2017-05-02
   details: MyText
   user: two
